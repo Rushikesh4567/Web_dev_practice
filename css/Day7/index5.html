@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model Q.5</title>
+    <style>
+         body {
+            display: flex;  /* Put boxes in one row */
+            margin: 0;
+            gap:20px;
+        }
+
+        .box{
+            height:50px;
+            width: 33.33%;
+            padding:20px;
+            box-sizing: border-box;
+        }
+        
+        .box1{
+            
+            background-color: aquamarine;
+        }
+        .box2{
+           
+            background-color: blue;
+        }
+        .box3{
+          
+            background-color: rgb(234, 86, 227);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">This is box1.</div>
+
+    <div class="box box2">This is box2.</div>
+
+    <div class="box box3">This is box3.</div>
+
+</body>
+</html>
