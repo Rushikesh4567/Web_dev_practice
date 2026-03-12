@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q.7 a</title>
+        <style>
+
+        .parent{
+            padding-top: 10px;   /* 🔥 Prevents collapsing */
+            background-color: lightgray;
+        }
+
+        .box1{
+            height: 100px;
+            background: aquamarine;
+            margin-bottom: 50px;
+        }
+
+        .box2{
+            height: 100px;
+            background: blueviolet;
+            margin-top: 30px;
+        }
+
+        /*
+        Without padding:
+        Margin collapses → space = 50px (not 80px)
+
+        With padding:
+        Margins no longer touch directly.
+        So total space = 50 + 30 = 80px
+        */
+
+        </style>
+</head>
+
+<body>
+
+        <div class="parent">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+</body>
+</html>

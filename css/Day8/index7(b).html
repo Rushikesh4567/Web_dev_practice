@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>q.7 b</title>
+        <style>
+
+        .parent {
+            overflow: hidden;  /* 🔥 Prevents margin collapsing */
+            background-color: lightgray;
+        }
+
+        .box1 {
+            height: 100px;
+            background: aquamarine;
+            margin-bottom: 50px;
+        }
+
+        .box2 {
+            height: 100px;
+            background: blueviolet;
+            margin-top: 30px;
+        }
+
+        /*
+        overflow creates a new Block Formatting Context (BFC)
+        So margins do NOT collapse.
+        Total space = 80px
+        */
+
+        </style>
+    </head>
+<body>
+
+    <div class="parent">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+</body>
+</html>
