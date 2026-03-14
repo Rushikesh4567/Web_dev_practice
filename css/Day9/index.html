@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ===== HEADER (NAVBAR) ===== */
+        #navbar{
+            height: 60px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            margin-right: 30px;
+            color: white;
+        }
+
+        .amazon {
+            font-size: 25px;
+            color: #f08804;
+        }
+
+        button {
+            background-color: #f08804;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        input {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        /* ===== CONTENT AREA ===== */
+        .content {
+            height: 300px;   /* appropriate height */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid black;
+            margin: 20px;
+        }  
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: rgba(255, 0, 0, 0.5);   /* red */
+        }
+
+        .box2 {
+            background-color: rgba(0, 255, 0, 0.5);   /* green */
+        }
+
+        .box3 {
+            background-color: rgba(0, 0, 255, 0.5);   /* blue */
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div id="navbar">
+            <a href="https://www.amazon.in" class="amazon">amazon.in</a>
+            <a href="#">Account</a>
+            <a href="#">My Cart</a>
+            <a href="#">Contact Us</a>
+            <input type="text" placeholder="Search Amazon.in">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- CONTENT AREA -->
+    <main class="content">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Amazon Clone | Made By Rushikesh
+    </footer>
+
+</body>
+</html>
