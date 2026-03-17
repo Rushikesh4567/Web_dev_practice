@@ -1,0 +1,32 @@
+div{
+    height:100px;
+    width:100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box1{
+    position: static;  /*Nothing will happen to box 1 and no any property like top,bottom, left,right*/
+    background-color: red;
+}
+#box2{
+    position:relative;
+    top:-20px;   /*z index*/
+    left: 10px;
+    background-color: green;
+}
+
+#box3{
+    /*position:absolute;*/
+    position: sticky;
+    top: 0px;
+    left:20px;
+}
+
+#box4{
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    top:0;
+}
