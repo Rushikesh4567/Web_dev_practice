@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+}
+
+div{
+    height:100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container{
+    width:800px;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    /*
+    flex-direction:row-reverse;
+    flex-direction:column;
+    flex-direction:column-reverse;
+    
+    */
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: pink;
+}
+
+#box3{
+    background-color: antiquewhite;
+}
+
+#box4{
+    background-color: aquamarine;
+}
+
+#box5{
+    background-color: blue;
+}
+
