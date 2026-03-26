@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+}
+
+div{
+    height:100px;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container{
+    width:600px;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   /* flex-wrap: wrap;
+    align-items: flex-start;
+    /*align-items:flex-start; aligns at main axis by row but space generate due to wrapping.
+    align-items:flexend;*/
+    /*align-content: flex-start;/*means flex at top axis of cross axis and content will be at below of items and used on multiple items.*/
+    /*align-content: center; all the content will be centered around main axis */
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: pink;
+    height: 200px;
+    flex-shrink: 2;/*2 times shrink as relative to others*/
+    flex-shrink: 0.5;
+}
+
+#box3{
+    background-color: antiquewhite;
+    height: 75px;
+}
+
+#box4{
+    background-color: aquamarine;
+}
+
+#box5{
+    background-color: blue;
+    /*align-self: flex-end;/*This property has the highest property among all properties which are applied on above container*/
+}
+

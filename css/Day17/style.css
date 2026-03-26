@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+}
+
+div{
+    height:100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container{
+    width:800px;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    /*
+    flex-direction:row-reverse;
+    flex-direction:column;
+    flex-direction:column-reverse;
+    */
+    justify-content: center;
+    /*justify-content: flex-start; /*Flex starts from left to right because of row*/
+    /*justify-content: flex-end; /*Flex starts from end of main axis i.e all items of container will be shifted to right end*/
+    /*justify-content: center; /*Flex at center ie all items will be at center and remaining space will be there and no space between items*/
+    /*justify-content: space-around; /*some space will be present around items and start and end space of main will be half of middle space*/
+    /*justify-content: space-between; /*space between items but no start and end space*/
+    /*justify-content: space-evenly; /*provides equal spaces*/
+
+    align-items: center;
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: pink;
+}
+
+#box3{
+    background-color: antiquewhite;
+}
+
+#box4{
+    background-color: aquamarine;
+}
+
+#box5{
+    background-color: blue;
+}
+
