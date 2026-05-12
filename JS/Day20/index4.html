@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Class</title>
+</head>
+<body>
+
+  <p class="myClass">First Paragraph</p>
+  <p class="myClass">Second Paragraph</p>
+
+  <button onclick="selectClass()">Select Class</button>
+
+  <script>
+    function selectClass() {
+      let element = document.querySelector(".myClass");
+      element.style.color = "red";
+    }
+  </script>
+
+</body>
+</html>

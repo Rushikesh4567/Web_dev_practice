@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background</title>
+</head>
+<body>
+
+  <div id="box" style="width:200px; height:200px; border:1px solid black;">
+    Box
+  </div>
+
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      let div = document.querySelector("#box");
+      div.style.backgroundColor = "blue";
+    }
+  </script>
+
+</body>
+</html>

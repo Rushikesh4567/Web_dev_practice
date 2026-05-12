@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print innerText</title>
+</head>
+<body>
+
+  <h2 id="heading">Hello JavaScript</h2>
+  <button onclick="printText()">Print Text</button>
+
+  <script>
+    function printText() {
+      let element = document.querySelector("#heading");
+      console.log(element.innerText);
+    }
+  </script>
+
+</body>
+</html>
+
