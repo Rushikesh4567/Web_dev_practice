@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change All Paragraphs</title>
+</head>
+<body>
+
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p>Paragraph 3</p>
+
+  <button onclick="changeAll()">Change All</button>
+
+  <script>
+    function changeAll() {
+      let paras = document.querySelectorAll("p");
+
+      paras.forEach((p, index) => {
+        p.innerText = "Updated Paragraph " + (index + 1);
+      });
+    }
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Class</title>
+    <style>
+      .highlight {
+        color: white;
+        background-color: black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+<body>
+
+  <p id="text">Hello World</p>
+  <button onclick="addClass()">Add Class</button>
+
+  <script>
+    function addClass() {
+      let el = document.querySelector("#text");
+      el.classList.add("highlight");
+    }
+  </script>
+
+</body>
+</html>
+
