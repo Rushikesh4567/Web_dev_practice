@@ -1,0 +1,28 @@
+```html id="r1jlwm"
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Items</title>
+</head>
+<body>
+
+  <ul id="list"></ul>
+
+  <button onclick="addItem()">Add Item</button>
+
+  <script>
+    let count = 1;
+
+    function addItem() {
+      let li = document.createElement("li");
+      li.innerText = "New Item " + count;
+
+      document.getElementById("list").append(li);
+
+      count++;
+    }
+  </script>
+
+</body>
+</html>
+```
