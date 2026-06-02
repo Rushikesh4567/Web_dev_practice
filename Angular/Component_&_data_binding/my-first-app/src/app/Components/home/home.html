@@ -1,0 +1,36 @@
+<p>Welcome to the Home Component</p>
+
+<p>Data Binding is a binding technique in Angular that connects UI to code</p>
+<p>
+  Directives are instructions in the DOM that tell Angular's HTML compiler to manipulate the DOM
+  elements
+</p>
+<h2>Welcome To Student Management</h2>
+
+<p>Name: {{ fname }}</p>
+
+<p>Roll Number: {{ myRoll }}</p>
+
+<img [src]="img" />
+<br />
+
+<button (click)="showbutton()">Click Me</button> <br /><br />
+
+<input [(ngModel)]="fname" placeholder="Enter Name" />
+<br />
+
+//ngFor
+<ul>
+  <li *ngFor="let car of cars">{{car}}</li>
+</ul>
+
+//ng If
+<p *ngIf="fname === 'Rushi'">Name is Rushi</p>
+<p *ngIf="fname !== 'Rushi'">Name is not Rushi</p>
+
+//ngSwitch
+<div [ngSwitch]="fname">
+  <p *ngSwitchCase="'Rushi'">Name is Rushi</p>
+  <p *ngSwitchCase="'blue'">Name is blue</p>
+  <p *ngSwitchDefault>Name is not Rushi nor blue</p>
+</div>
