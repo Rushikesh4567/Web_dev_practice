@@ -39,7 +39,7 @@ select department,sum(salary) as total_salary from employees group by department
 select category,sum(stock) as total_stock from products group by category having sum(stock) between 20 and 60;
 select category,max(price) as max_price from products group by category having max(price)>20000;
 select category,avg(stock) as total_stock from products group by category having avg(stock)>15;
-select category,sum(price) as total_price from products group by category having sum(price)>20000;
+select category,sum(price) as total_price from products group by category having sum(price)>30000;
 
 
 
